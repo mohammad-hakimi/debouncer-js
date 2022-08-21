@@ -1,5 +1,5 @@
 declare module 'debouncer-js' {
-    class Debouncer {
+    export default class Debouncer {
         constructor();
 
         /**
