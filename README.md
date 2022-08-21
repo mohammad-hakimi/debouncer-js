@@ -40,5 +40,8 @@ function onChangeSomething() {
     debouncedFunc(...args); 
     // It will call func when ever 
     // the onChangeSomething call last more than 500ms.
+  
+debouncer.clear(func); // Or func.name ---- Clear the func from being called in the delay time and latest call won't be trigger.
+debouncer.flush(); // Remove all debounced functions calls  
 }
 ```
