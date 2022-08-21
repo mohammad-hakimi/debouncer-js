@@ -13,10 +13,10 @@ To install, you can use [npm](https://npmjs.org/):
 
 To install debouncer-js in React CDN app:
 
-- Add this CDN script tag after React CDN scripts and before your JS files (for example
-  from [cdnjs](https://cdnjs.com/)):
+- Add this CDN script tag before your JS files (for example
+  from [unpkg](https://unpkg.com/)):
 
-         <script src="hhttps://unpkg.com/debouncer-js@1.0.2/debouncer.js"
+         <script src="https://unpkg.com/debouncer-js@1.0.2/debouncer.js"
          crossorigin="anonymous"
          referrerpolicy="no-referrer"></script>
 
