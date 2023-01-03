@@ -34,4 +34,4 @@ class Debouncer {
     }
 }
 
-export default Debouncer
+module.exports = Debouncer
