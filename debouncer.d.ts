@@ -7,10 +7,10 @@ declare module 'debouncer-js' {
          * @param {function(...args: any[]): void} callback A named function should be passed. Anonymous functions and arrow functions may not
          * work properly.
          * @param {number} delay The delay to postpone the calling callback function in milliseconds.
-         * @returns {function(...args: any[]): void} Debounced function derived from the passed callback.
+         * @returns {function(...args: any[]): any} Debounced function derived from the passed callback.
          */
-        debounce(callback: (...args: any[]) => void, delay: number);
-        clear(callback: ((...args: any[]) => void) | string);
-        flush();
+        debounce<T extends any, R extends any>(callback: (...args: T[]) => R, delay: number): (...args: T[]) => R;
+        clear(callback: ((...args: any[]) => void) | string): void;
+        flush(): void;
     }
 }
